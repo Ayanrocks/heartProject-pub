@@ -1,0 +1,41 @@
+#notfound {
+  height: 75vh;
+  width: 100%;
+
+  .notfound {
+    &__content {
+      display: flex;
+      width: 90%;
+      justify-content: space-around;
+      align-items: center;
+      margin: 0 auto;
+
+      .tag {
+        text-align: center;
+
+        h1 {
+          font-size: 4rem;
+          color: $primary-red;
+        }
+
+        p {
+          color: $secondary-pink;
+          font-size: 2rem;
+        }
+
+        a {
+          color: $dark-red
+        }
+      }
+    }
+
+    &__bg {
+      height: 75rem;
+      width: 100%;
+      background-image: url("../../assets/404notfound.svg");
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+}

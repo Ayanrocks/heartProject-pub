@@ -1,0 +1,116 @@
+.team {
+  width: 80%;
+  margin: 10rem auto 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 0 7px rgb(214, 214, 214);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  &__heading {
+    font-size: 4rem;
+    margin: 1rem;
+
+    h1 {
+      color: $primary-red;
+    }
+  }
+
+  &__content {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    p {
+      font-size: 1.7rem;
+    }
+  }
+
+  &__cards {
+    width: 30.8rem;
+    height: 48.5rem;
+    margin: 4rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    box-shadow: 0 0 7px rgb(214, 214, 214);
+    position: relative;
+    padding: 0;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      box-shadow: 0 5px 14px 5px rgb(214, 214, 214);
+    }
+
+    &__background,
+    &__background__shadow,
+    &__image,
+    &__area {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+    }
+
+    &__background {
+      left: 0;
+      right: 0;
+
+      &__shadow {
+        top: 95%;
+        background: #000;
+        height: 10%;
+        width: 100%;
+        z-index: 2;
+        max-height: 43.5rem;
+
+        &:before {
+          content: '';
+          position: absolute;
+          z-index: 10;
+          background-image: linear-gradient(to top, #000, transparent);
+          left: 0%;
+          right: 0;
+          bottom: 100%;
+          height: 275px;
+        }
+      }
+
+      .team__cards__image {
+        width: 100%;
+        height: 95%;
+        background-position: center 10%;
+        background-size: cover;
+        z-index: 1;
+      }
+    }
+
+    &__content {
+      position: absolute;
+      bottom: 0%;
+      right: 0;
+      left: 0;
+      width: 100%;
+      z-index: 3;
+
+      .team__cards__name {
+        font-size: 2rem;
+        font-style: italic;
+        letter-spacing: 1.5px;
+        color: #fff;
+        font-weight: 700;
+      }
+
+      .team__cards__desig {
+        font-size: 1.5rem;
+        color: rgb(151, 151, 151);
+        margin-top: 20px;
+        max-width: 500px;
+        letter-spacing: 0.1px;
+      }
+
+    }
+  }
+}

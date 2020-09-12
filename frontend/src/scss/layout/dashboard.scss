@@ -1,0 +1,21 @@
+#dashboard {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+
+  .dashboard {
+    &__content {
+      margin-top: 10rem;
+      height: 100%;
+    }
+
+    &__fab {
+      position: absolute;
+      bottom: 5rem;
+      right: 5rem;
+      width: 60px;
+      height: 60px;
+      padding: 14px !important;
+    }
+  }
+}

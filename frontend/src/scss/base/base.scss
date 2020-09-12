@@ -1,0 +1,138 @@
+* {
+  font-family: "Telex", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+a,
+a:visited,
+a:link {
+  text-decoration: none;
+  color: #000;
+}
+
+.submit-btn {
+  background-color: $primary-red;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 4px;
+  margin: 1rem 0;
+  font-size: 2rem;
+}
+
+.disabled-btn {
+  background-color: $dark-red;
+}
+
+.inputBar {
+  margin: 1rem 0;
+  padding: 1rem;
+  border: none;
+  box-shadow: 0 0 2px rgba(143, 143, 143, 0.4);
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: white;
+  background: $primary-red;
+}
+
+::selection {
+  color: white;
+  background: $primary-red;
+}
+
+.noreports__bg {
+  background-image: url("../../assets/noReports.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 60%;
+}
+
+.mobile__bg {
+  margin: 5rem;
+  background-image: url("../../assets/mobiledesign.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 40%;
+}
+
+/*-------------media query for 1376*768------------------------*/
+
+
+@media screen and (max-width: 1376px) {
+  html {
+    font-size: 42% !important;
+    overflow-x: hidden;
+  }
+
+  * {
+    font-family: "Telex", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    display: block;
+  }
+
+  div {
+    display: block;
+  }
+
+  nav {
+    display: block;
+  }
+
+  div #home {
+    background-image: url('../../assets/home-bg.svg');
+    background-repeat: no-repeat;
+    margin-top: -10rem;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  section {
+    display: block;
+  }
+
+  #home .content .row .container .home__content {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    transform: translate(-48.5%, -50%);
+  }
+
+  #home .content .row .container .home__content .col-md .flex-c h1 {
+    color: #ff5f5f;
+    font-size: 5.8rem;
+    font-weight: 100;
+  }
+
+  #home .content .row .container .home__content .col-md .heart {
+    margin-left: 25rem;
+    margin-top: -5rem;
+  }
+
+  .heart svg {
+    width: 527px;
+    height: 407px;
+  }
+
+  .charts__img img {
+    width: 660px;
+  }
+
+}

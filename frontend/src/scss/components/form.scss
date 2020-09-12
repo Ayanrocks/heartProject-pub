@@ -1,0 +1,35 @@
+.form {
+  &__container {
+    width: 40%;
+    height: 60%;
+    margin: 0 auto;
+    padding: 5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(250, 250, 250);
+    box-shadow: 0 0 7px rgba(143, 143, 143, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+  }
+
+  &__switcher{
+    font-size: 1.6rem;
+    margin: 1rem;
+  }
+  &__title {
+    // margin: 0rem auto 5rem auto;
+    font-size: 3rem;
+    flex: 1;
+    color: $primary-pink;
+  }
+  &__content {
+    // margin: 2rem auto;
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+  }
+}

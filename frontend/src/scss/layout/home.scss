@@ -1,0 +1,97 @@
+#home {
+  background-image: url("../../assets/home-bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: -10rem;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+
+  .home {
+    &__content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 80%;
+      margin: 0 auto;
+      display: flex;
+      transform: translate(-48.5%, -50%);
+
+      h1 {
+        color: $primary-pink;
+        font-size: 6.8rem;
+        font-weight: 100;
+      }
+
+      h3 {
+        color: $secondary-pink;
+        font-size: 3.5rem;
+        font-weight: 300;
+      }
+
+      .heart {
+        margin-left: 30rem;
+        margin-top: -5rem;
+      }
+    }
+  }
+}
+
+#cards {
+  height: 50vh;
+  overflow: hidden;
+}
+
+#charts {
+  width: 98vw;
+
+  .charts {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+
+    &__heading {
+      font-size: 3rem;
+      margin-bottom: 10rem;
+
+      h1 {
+        color: $primary-red;
+        font-weight: 100;
+      }
+    }
+
+    &__img {
+      margin-top: 10rem;
+    }
+  }
+}
+
+#getStarted {
+  width: 98vw;
+  height: 25vh;
+  margin-top: 10rem;
+
+  .getStarted {
+    width: 50%;
+    margin: 15rem auto 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    &__heading {
+      display: inline-block;
+      font-size: 3rem;
+      text-align: center;
+
+      h1 {
+        color: $primary-red;
+        font-weight: 100;
+      }
+    }
+  }
+}
+
+#about {
+  margin: 5rem;
+}

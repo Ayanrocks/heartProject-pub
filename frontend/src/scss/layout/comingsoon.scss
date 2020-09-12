@@ -1,0 +1,37 @@
+#comingSoon {
+  height: 75vh;
+  width: 100%;
+
+  .comingSoon {
+    &__content {
+      display: flex;
+      width: 90%;
+      justify-content: space-around;
+      align-items: center;
+      margin: 0 auto;
+
+      .tag {
+        text-align: center;
+
+        h1 {
+          font-size: 4rem;
+          color: $primary-red;
+        }
+
+        p {
+          color: $secondary-pink;
+          font-size: 2rem;
+        }
+      }
+    }
+
+    &__bg {
+      height: 75rem;
+      width: 100%;
+      background-image: url("../../assets/comingSoon.svg");
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+}

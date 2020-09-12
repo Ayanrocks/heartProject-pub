@@ -1,0 +1,55 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 80vw;
+  //padding: 2rem;
+  margin: 0 auto;
+  align-items: center;
+
+  &__left {
+    width: 50%;
+
+    .brand {
+      &__title {
+        font-size: 3.5rem;
+        color: $primary-red;
+      }
+
+      &__logo {
+        height: 10rem;
+        width: 10rem;
+        padding: 0;
+        margin: 0;
+      }
+    }
+  }
+
+  &__right {
+    width: 50%;
+    text-align: center;
+
+    .menu {
+      display: flex;
+      justify-content: flex-end;
+
+      &__signin {
+        margin-right: 4rem;
+        font-size: 2rem;
+
+        .signin__text {
+          color: $grey;
+        }
+      }
+    }
+  }
+}
+
+.navbar-loggedIn {
+  box-shadow: -1px 2px 7px 0px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}

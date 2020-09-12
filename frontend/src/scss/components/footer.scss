@@ -1,0 +1,60 @@
+.footer {
+  width: 100vw;
+  height: 50vh;
+  background-color: $primary-yellow;
+  padding-top: 10rem;
+
+  &__content {
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  &__heading {
+    width: 33%;
+    font-size: 3rem;
+    text-align: center;
+
+    h1 {
+      color: $primary-red;
+      font-weight: 100;
+      margin: 0;
+    }
+
+    .brand__logo {
+      height: 10rem;
+      width: 10rem;
+    }
+  }
+
+  &__links {
+    width: 33%;
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: space-around;
+
+    &__contact {
+      align-self: center;
+      width: 30%;
+    }
+
+    &__about {
+      width: 30%;
+      align-self: center;
+    }
+
+    a {
+      color: $black;
+    }
+  }
+
+  &__description {
+    width: 33%;
+    font-size: 2rem;
+    text-align: center;
+    color: rgb(59, 59, 59);
+    margin: 0;
+  }
+}
